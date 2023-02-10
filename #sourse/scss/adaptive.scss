@@ -1,0 +1,571 @@
+/*______________max-width__1490px_____________*/
+@media (max-width: 1490px){
+  .container{
+    max-width: 1110px;
+    padding: 0 33px 0 191px ;
+    margin: 0 auto;
+  }
+  .become-patron {
+    .container{
+    padding: 0 33px  ;
+    }
+  }
+}
+/*______________max-width__1250px_____________*/
+@media (max-width: 1200px) {
+  .header-menu {
+    grid-template: 22px 52px 22px / minmax(191px, 1fr) minmax(auto, 822px) minmax(33px, 1fr) ;
+    &__phone{
+      margin-left: -105px;
+      grid-column: 2;
+      grid-row: 3;
+      padding-left: 33px;
+      display: flex;
+      justify-content: center;
+    }
+  } 
+}
+/*______________max-width__1127px_____________*/
+@media (max-width: 1127px){
+  .become-patron {
+    &__contacts {
+      height: 160px;
+    }
+    &__contacts-column2 {
+        height: 76px;
+    }
+    .footer {
+      .container{
+        max-width: 730px;
+        padding: 0 ;
+      }
+    }
+  }
+}
+/* Portrait tablets and small desktops_______________ max-width - 992px __________*/
+@media (max-width: 992px) {
+  .container{
+    padding: 0 11.592% 0 19.254% ;
+  }
+  .title{
+    font-size: 48px;
+    line-height: 65px;
+  }
+  .header-main {
+    display: flex;
+    &__body {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+    }
+    &__text {
+      max-width: 690px;
+      margin-right: 75px;
+    }
+    &__poster {
+      display: none;
+    }
+  }
+  .about-theatre{
+    &__image{
+      display: none;
+    }
+    &__about-numbers{
+      padding: 0;
+    }
+  }
+  .our-works {
+    height: 1565px;
+    .overlay{
+      display: grid;
+      grid-template: 1fr 1fr 1fr / 1fr minmax(auto, 10fr) 1fr;
+      justify-items: center;
+    }
+    &__body{
+      max-width: 690px;
+      grid-row: 2;
+      grid-column: 2;
+      padding: 0 ;
+      display: grid;
+      grid-template: 1fr / 156px 1fr;
+    }
+    &__title {
+      margin-bottom: 100px;
+    }
+    &__posters-row{
+      margin-bottom: 150px;
+      padding-right: 11.592%;
+      padding-left: 19.254%;
+    }
+    &__posters {
+      overflow: hidden;
+    }
+    &__description {
+      padding-left: 24px;
+    }
+    &__best-theatre{
+      margin-bottom: 150px;
+      height: 550px;
+    }
+  }
+  .theatre-partners {
+    padding-right: 11.592%;
+    padding-left: 19.254%;
+    &__title {
+      margin-bottom: 121px;
+    }
+  }
+  .become-patron {
+    padding-top: 192px;
+    &__title {
+      margin-bottom: 100px;
+    }
+    &__body {
+      grid-template:  1fr / 1fr;
+      justify-items: center;
+      padding-bottom: 80px;
+    }
+    &__form {
+      grid-column: 1;
+      max-width: 690px;
+    }
+    &__form-row1 {
+      grid-template: 1fr /   minmax(auto , 390px) 30px minmax(auto , 270px)  ;
+    }
+    &__contacts {
+      order: 2;
+      flex-direction: row;
+      height: 59px;
+    }
+    &__contacts-column2 {
+      order: 2;
+      text-align: end;
+      height: 59px;
+    }
+  }
+}
+/*_______________ max-width - 900px __________*/
+@media (max-width: 900px){
+  header {
+    min-height: 800px;
+  }
+  .header-menu {
+    display: block;
+    position: static;
+    padding: 0;
+    &__menu{
+      transition: all 0.3s ease 0s;
+      position: fixed;
+      z-index: 3;
+      left: -500px;
+      width: 300px;
+      height: 100%;
+      background-color: #333333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__links {
+      overflow: auto;
+      grid-row: 2;
+      height: 700px;
+    }
+    &__links-list {
+      margin: 50px 0 89px 0;
+      flex-direction: column;
+      height: 305px;
+    }
+    &__link {
+      font-size: 24px;
+      line-height: 33px;      
+      letter-spacing: 0.05em;
+      margin-left: 39px;
+      li{
+        margin-bottom: 25px;
+      }
+      &:hover{
+        border-bottom: none;
+        transform: none;
+      }
+    }
+    &__social-media{
+      grid-row: 3;
+      height: 140px;
+      width: 140px;
+      display: block;
+      position: relative;
+      margin: 0 auto 50px;
+      li{
+        position: absolute;
+        &:nth-child(1){
+          top: 0;
+          left: 8.65px;
+        }
+        &:nth-child(2){
+          top: 0;
+          right: 0;
+        }
+        &:nth-child(3){
+          right: 0;
+          bottom: 3px;
+        }
+        &:nth-child(4){
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+    &__phone {
+      position: absolute;
+      right: 4.582%;
+      top: 56px;
+    }
+    &__number {
+      right: 0;
+      top: 0;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: right;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      position: relative;
+      border-bottom: solid 2px #D1A954;
+    }
+/*______________________burger____________________*/
+    &__adaptive{
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      cursor: pointer;
+      position: fixed;
+      z-index: 2;
+      top: 38px;
+      left: 23px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__burger {
+      position: relative;
+      width: 26px;
+      height: 20px;
+      transition: all 1s ease 0s;
+      display: block;
+      &::after,
+      &::before {
+      content: "";
+        position: absolute;
+        height: 3px;
+        background-color: #ffffff;
+        left: 0;
+        transition: all 0.5s ease 0s;
+      }
+      &::before {
+        top: 0;
+        width: 26.67px
+      }
+      &::after {
+        bottom: 0;
+        width: 12.3px
+      }
+      span {
+        position: absolute;
+        width: 20px;
+        height: 3px;
+        background-color: #ffffff;
+        left: 0;
+        top: 8.5px;
+      }
+    }
+    &__back {
+      padding: 5px;
+      position: absolute;
+      top: 33px;
+      right: 33px;
+      width: 16px;
+      height: 16px;
+      &::after,
+      &::before {
+        content: "";
+        transition: transform 0.3s ease 0.3s, background-color 0s ease 0.3s;
+        position: absolute;
+        height: 2px;
+        background-color: #333333;
+        left: 3px;
+      }
+      &::before {
+        top: 5px;
+        width: 20px;
+        transform: translate(0, 7px) rotate(0deg);
+      }
+      &::after {
+        bottom: 5px;
+        width: 20px;
+        transform: translate(0, -7px) rotate(0deg);
+      }
+    }
+  }
+  /*___________________burger-active_______________*/
+  .active {
+    .header-menu {
+      &__menu {
+        left: 0;
+      }
+      &__burger {
+        &::before {
+          width: 12.3px
+        }
+        &::after {
+          width: 26.67px
+        }
+      }
+      &__back {
+        &::after,
+        &::before {
+          background-color: #ffffff;
+        }
+        &::before {
+          transform: translate(0, 7px) rotate(45deg);
+        }
+        &::after {
+          transform: translate(0, -7px) rotate(-45deg);
+        }
+      }
+    }
+  }
+  .header-main {
+    &__body {
+      margin: 0 auto;
+    }
+    &__text {
+      max-width: 540px;
+      margin: 0;
+    }
+  }
+  .header-main {
+    &__title {
+      margin: 252px 0 1px;
+      text-align: center;
+      font-size: 36px;
+      letter-spacing: 0.05px;
+    }
+  }
+  .header-contacts {
+    display: none;
+  }
+  .lock{
+    overflow: hidden;
+  }
+}
+/* Landscape phones and portrait tablets_____________ max-width - 768px __________*/
+@media (max-width: 768px) {
+  .container{
+    padding: 0 4.582% 0 5.078% ;
+  }
+  .about-theatre{
+    &__title {
+      padding: 90px 0 60px 0;
+    }
+  }
+  .our-works {
+    height: 1405px;
+    .overlay{
+      display: grid;
+      grid-template: 1fr 1fr 1fr / 1fr minmax(auto, 10fr) 1fr;
+    }
+    &__title {
+      margin-bottom: 60px;
+    }
+    &__body{
+      max-width: 540px;
+      grid-row: 2;
+      grid-column: 2;
+      padding: 0 ;
+    }
+    &__posters-row{
+      margin-bottom: 90px;
+      padding-right: 4.582% ;
+      padding-left: 5.078%;
+    }
+    &__text{
+      font-size: 29px;
+    }
+    &__best-theatre{
+      margin-bottom: 90px;
+    }
+    &__years{
+      margin-right: 0px;
+    }
+  }
+  .theatre-partners {
+    padding-right: 4.582% ;
+    padding-left: 5.078%;
+    &__title {
+      margin-bottom: 72px;
+    }
+  }
+  .become-patron {
+    padding-top: 162px;
+    &__title {
+      margin-bottom: 60px;
+    }
+    &__body {
+      padding-bottom: 60px
+    }
+    &__form-row2 {
+      padding-bottom: 60px;
+    }
+  }
+}
+/*______________max-width__650px_____________*/
+@media (max-width: 650px){
+  .become-patron{
+    &__form {
+      grid-template:  230px 40px 1fr / 1fr;
+    }
+    &__form-row1{
+
+      grid-template: 100px 30px 100px /   90vw ;
+    }
+    &__form-column1{
+
+      grid-template: 35px 30px 35px /   minmax( 0 , 1fr) 8.506%  minmax( 0 , 1fr)  ;
+    }
+    &__form-row2 {
+      padding-bottom: 50px;
+      display: grid;
+      justify-items: center;
+      grid-template: 50px 30px 1fr / 1fr;  
+    }
+    &__form-text {
+      text-align: center;
+      grid-row: 3;
+      order: 2;
+    }
+    &__form-column2 {
+      grid-column: 1;
+      grid-row: 3;
+    }
+  }
+}
+/* Portrait phones and smaller_______________________ max-width - 576px __________*/
+@media (max-width: 576px) {
+  header {
+    min-height: 600px;
+  }
+  .header-main__title {
+    margin: 160px 0 1px;
+  }
+  .about-theatre{
+    &__title {
+      padding: 90px 0 60px 0;
+      line-height: 65px;
+    }
+    &__body{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__best-theatre{
+      max-width: 504px;
+      margin-bottom: 20px;
+      padding: 0;
+      text-align: center;
+    }
+    &__body-title{
+      text-align: center;
+    }
+    &__about-numbers{
+
+       max-width: 345px;
+      margin: 0 auto;
+    }
+    &__about-numbers-main{
+      min-height: 102px;
+      display: grid;
+      grid-template: 1fr / minmax(auto , 175px)  minmax(auto, 50px) minmax(auto , 120px)  ;
+      align-items: end;
+    }
+    &__icon{
+      &__icon {
+        display: grid;
+        justify-items: center;
+      }
+      &:nth-child(2){
+        grid-column: 3;
+      }
+    }
+    &__icon-chaird{   
+      margin-bottom: 0px;
+    }
+  }
+  .our-works {
+    height: 1385px;
+    &__text{
+      font-size: 25px;
+    }
+    &__posters-row{
+      margin-bottom: 80px;
+    }
+    &__best-theatre{
+      margin-bottom: 80px;
+    }
+  }
+  .theatre-partners {
+    padding-right: 5.199% ;
+    padding-left: 5.729%;
+  }
+  .become-patron {
+    padding-top: 152px;
+  }
+}
+/*______________max-width__550px_____________*/
+@media (max-width: 550px){
+  .become-patron {
+    .container{
+      padding-right: 5.199% ;
+      padding-left: 5.729%;
+    }
+    &__contacts {
+      flex-direction: column;
+      height: 143px;
+    }
+    &__contacts-column2 {
+      order: 1;
+      text-align: left;
+    }
+  }
+}
+/* Iphone 5__________________________________________ max-width - 320px __________*/
+@media (max-width: 320px) {
+  .about-theatre{
+    &__about-numbers-main{
+      align-items: start;
+    }
+    &__icon {
+      display: grid;
+      justify-items: center;
+    }
+  }
+  .our-works {
+    &__description {
+      padding-left: 0px;
+    }
+  }
+}
+/*______________min-height__650px_____________*/
+@media (min-height: 650px){
+  .header-menu__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
